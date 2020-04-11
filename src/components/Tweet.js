@@ -74,7 +74,7 @@ class Tweet extends Component {
               )}
             </button>
             <span>{likes !== 0 && likes}</span>
-          </div>
+  const parentTweet = tweet ? tweets[tweet.replyingTo] : null
         </div>
       </div>
     )
