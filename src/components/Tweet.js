@@ -74,7 +74,7 @@ class Tweet extends Component {
               )}
             </button>
             <span>{likes !== 0 && likes}</span>
-  const parentTweet = tweet ? tweets[tweet.replyingTo] : null
+          </div>
         </div>
       </div>
     )
@@ -83,7 +83,7 @@ class Tweet extends Component {
 
 function mapStateToProps({ authedUser, users, tweets }, { id }) {
   const tweet = tweets[id]
-  const parentTweet = tweets ? tweets[tweet.replyingTo] : null
+  const parentTweet = tweet ? tweets[tweet.replyingTo] : null
 
   return {
     authedUser,
